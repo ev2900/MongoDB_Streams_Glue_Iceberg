@@ -1,0 +1,1 @@
+{"_id": {"_data": "82646E3E5C000000012B022C0100296E5A10047B02F6D7FF1F482C8E637C7471269F9046645F69640064646E3D1E2A06AF7204CF0FB90004"}, "operationType": "delete", "clusterTime": {"$timestamp": {"t": 1684946524, "i": 1}}, "wallTime": {"$date": "2023-05-24T16:42:04Z"}, "ns": {"db": "sample_db", "coll": "users"}, "documentKey": {"_id": {"$oid": "646e3d1e2a06af7204cf0fb9"}}}
