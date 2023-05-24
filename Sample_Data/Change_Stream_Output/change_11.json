@@ -1,0 +1,22 @@
+{
+	"_id": {
+		"_data": "82646E18CD000000052B022C0100296E5A1004A35246746766464E814F7DB0A3D70531463C5F6964003C3130303639363432000004"
+	},
+	"operationType": "delete",
+	"clusterTime": {
+		"$timestamp": {
+			"t": 1684936909,
+			"i": 5
+		}
+	},
+	"wallTime": {
+		"$date": "2023-05-24T14:01:49.401Z"
+	},
+	"ns": {
+		"db": "sample_airbnb",
+		"coll": "listingsAndReviews"
+	},
+	"documentKey": {
+		"_id": "10069642"
+	}
+}

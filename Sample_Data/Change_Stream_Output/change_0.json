@@ -1,0 +1,29 @@
+{
+	"_id": {
+		"_data": "82646E1666000000022B022C0100296E5A1004A35246746766464E814F7DB0A3D70531463C5F6964003C3130303036353436000004"
+	},
+	"operationType": "update",
+	"clusterTime": {
+		"$timestamp": {
+			"t": 1684936294,
+			"i": 2
+		}
+	},
+	"wallTime": {
+		"$date": "2023-05-24T13:51:34.088Z"
+	},
+	"ns": {
+		"db": "sample_airbnb",
+		"coll": "listingsAndReviews"
+	},
+	"documentKey": {
+		"_id": "10006546"
+	},
+	"updateDescription": {
+		"updatedFields": {
+			"minimum_nights": "1"
+		},
+		"removedFields": [],
+		"truncatedArrays": []
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"_id": {
+		"_data": "82646E1674000000042B022C0100296E5A1004A35246746766464E814F7DB0A3D70531463C5F6964003C3130303039393939000004"
+	},
+	"operationType": "update",
+	"clusterTime": {
+		"$timestamp": {
+			"t": 1684936308,
+			"i": 4
+		}
+	},
+	"wallTime": {
+		"$date": "2023-05-24T13:51:48.367Z"
+	},
+	"ns": {
+		"db": "sample_airbnb",
+		"coll": "listingsAndReviews"
+	}, 
+	"documentKey": {
+		"_id": "10009999"
+	},
+	"updateDescription": {
+		"updatedFields": {
+			"description": "One sofa-bed in quiet and bucolic neighbourhood right next to the Botanical Garden. Small garden, outside shower, well equipped kitchen and bathroom with shower and tub. Easy for transport with many restaurants and basic facilities in the area. Lovely one bedroom + sofa-bed in the living room, perfect for two but fits up to four comfortably.  There\u00b4s a small outside garden with a shower There\u00b4s a well equipped open kitchen with both 110V / 220V wall plugs and one bathroom with shower, tub and even a sauna machine! All newly refurbished! I\u00b4ll be happy to help you with any doubts, tips or any other information needed during your stay. This charming ground floor flat is located in Horto, a quiet and bucolic neighborhood just next to the Botanical Garden, where most of the descendants of it\u00b4s first gardeners still live. You\u00b4ll be 30 minutes walk from waterfalls in the rainforest with easy hiking trails! There are nice bars and restaurants as well as basic facilities - pharmacy, b"
+		},
+		"removedFields": [],
+		"truncatedArrays": []
+	}
+}
