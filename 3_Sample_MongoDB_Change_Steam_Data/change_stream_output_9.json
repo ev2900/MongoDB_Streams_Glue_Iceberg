@@ -1,0 +1,1 @@
+{"operationType": "update", "ns": {"db": "sampleDB", "coll": "user"}, "documentKey": {"_id": "646e9a7b80b1d315a35608c4"}, "updateDescription": {"updatedFields": {"email": "sdelunah@barnesadnoble.com"}}, "id": {"_data": "82646EB330000000082B022C0100296E5A10040C380DFD9DA2486A9F472A0A33C7B3B146645F69640064646E9A7B80B1D315A35608C40004"}}
