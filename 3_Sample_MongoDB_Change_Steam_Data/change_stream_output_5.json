@@ -1,1 +1,0 @@
-{"operationType": "update", "ns": {"db": "sampleDB", "coll": "user"}, "documentKey": {"_id": "646e9a7b80b1d315a35608be"}, "updateDescription": {"updatedFields": {"married_status": true}}, "id": {"_data": "82646EB30E000000052B022C0100296E5A10040C380DFD9DA2486A9F472A0A33C7B3B146645F69640064646E9A7B80B1D315A35608BE0004"}}

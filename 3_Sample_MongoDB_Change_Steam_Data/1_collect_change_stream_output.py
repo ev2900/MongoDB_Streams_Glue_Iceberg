@@ -1,46 +1,60 @@
-# 
-# 
-# 
-
 import os
 import pymongo
 from bson.json_util import dumps
+from bson.objectid import ObjectId
 
-client = pymongo.MongoClient('<mongo-db-connection-string>')
+mongoDB_connection_string_file = open("0_mongoDB_connection_string.txt", "r")
+mongoDB_connection_string = mongoDB_connection_string_file.readline()
+mongoDB_connection_string_file.close()
 
+client = pymongo.MongoClient(mongoDB_connection_string)
+
+# client.<database_name>.<collection_name>
 change_stream = client.sampleDB.user.watch()
 
 counter = 0
 
 for change in change_stream:
 
-    del change['clusterTime']
-    del change['wallTime']
+    if change['operationType'] != "delete":
 
-    change['id'] = change['_id']
-    del change['_id']
+        # Look up full record + add the operationType field
+        update_insert = client.sampleDB.user.find_one({"_id": ObjectId(change['documentKey']['_id'])})
+        
+        update_insert["operationType"] = change["operationType"]
+        # update_insert["clusterTime"] = str(change["clusterTime"])    
+        update_insert["wallTime"] = str(change["wallTime"])
 
-    change['documentKey']['_id'] = str(change['documentKey']['_id']).replace("ObjectId(","").replace(")","")
+        # Clean up json
+        update_insert["_id"] = str(change['documentKey']['_id'])
 
-    if 'fullDocument' in change:
-        change['fullDocument']['_id'] = str(change['fullDocument']['_id']).replace("ObjectId(","").replace(")","")
+        update_insert = str(update_insert).replace("'", '"').replace("True", "true").replace("False","false")
 
-    if change['operationType'] == 'update':
-        if len(change['updateDescription']['removedFields']) == 0:
-            del change['updateDescription']['removedFields']
+        # Write to file
+        output_file = open("change_stream_output_" + str(counter) + ".json", "w")
+        output_file.write(update_insert)
+        output_file.close()
 
-    if change['operationType'] == 'update':
-        if len(change['updateDescription']['truncatedArrays']) == 0:
-            del change['updateDescription']['truncatedArrays']
+        print("file change_" + str(counter) + ".json created")
 
-    change = str(change).replace("'", '"').replace("True", "true").replace("False","false")
+    elif change['operationType'] == "delete":
 
-    output_file = open("change_stream_output_" + str(counter) + ".json", "w")
+        delete = {}
 
-    output_file.write(change)
+        delete["operationType"] = change["operationType"]
+        delete["_id"] = str(change['documentKey']['_id'])
+        delete["wallTime"] = str(change["wallTime"])
 
-    output_file.close()
+        # Clean up json
+        delete = str(delete).replace("'", '"')
 
-    print("file change_" + str(counter) + ".json created")
+        # Write to file
+        '''
+        output_file = open("change_stream_output_" + str(counter) + ".json", "w")
+        output_file.write(delete)
+        output_file.close()
+
+        print("file change_" + str(counter) + ".json created")
+        '''
 
     counter = counter + 1
