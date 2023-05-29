@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a356092a",
+	"first_name": "Stavro",
+	"last_name": "Succamore",
+	"email": "ssuccamore3b@gravatar.com",
+	"gender": "Female",
+	"address": {
+		"city": "Palm Bay",
+		"state": "Florida",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "3567229737350029",
+		"card_type": "jcb",
+		"currency_code": "USD",
+		"balance": "$9839.42"
+	},
+	"married_status": true,
+	"operationType": "update",
+	"wallTime": "2023-05-26 20:27:46.638000"
+}

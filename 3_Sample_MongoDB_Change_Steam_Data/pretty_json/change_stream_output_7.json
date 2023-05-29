@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a356093c",
+	"first_name": "Hort",
+	"last_name": "Hember",
+	"email": "hhember3t@samsung.com",
+	"gender": "Male",
+	"address": {
+		"city": "Louisville",
+		"state": "Kentucky",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "201657800289336",
+		"card_type": "diners-club-enroute",
+		"currency_code": "USD",
+		"balance": "$2685.65"
+	},
+	"married_status": false,
+	"operationType": "update",
+	"wallTime": "2023-05-26 20:27:52.858000"
+}

@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a3560914",
+	"first_name": "Karyl",
+	"last_name": "Chatelain",
+	"email": "kchatelain2p@patch.com",
+	"gender": "Female",
+	"address": {
+		"city": "San Bernardino",
+		"state": "California",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "3557385941805869",
+		"card_type": "jcb",
+		"currency_code": "USD",
+		"balance": "$1864.29"
+	},
+	"married_status": false,
+	"operationType": "insert",
+	"wallTime": "2023-05-26 20:27:20.849000"
+}

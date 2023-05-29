@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a3560973",
+	"first_name": "Dave",
+	"last_name": "Davidowsky",
+	"email": "ddavidowsky5f@yahoo.com",
+	"gender": "Female",
+	"address": {
+		"city": "Tacoma",
+		"state": "Washington",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "3543886409332319",
+		"card_type": "jcb",
+		"currency_code": "USD",
+		"balance": "$5871.70"
+	},
+	"married_status": true,
+	"operationType": "insert",
+	"wallTime": "2023-05-26 20:27:11.347000"
+}

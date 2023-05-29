@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a3560942",
+	"first_name": "Neila",
+	"last_name": "Wilkerson",
+	"email": "nwilkerson3z@yahoo.com",
+	"gender": "Female",
+	"address": {
+		"city": "Sacramento",
+		"state": "California",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "3528379008680931",
+		"card_type": "jcb",
+		"currency_code": "USD",
+		"balance": "$3659.47"
+	},
+	"married_status": true,
+	"operationType": "update",
+	"wallTime": "2023-05-26 20:27:59.768000"
+}

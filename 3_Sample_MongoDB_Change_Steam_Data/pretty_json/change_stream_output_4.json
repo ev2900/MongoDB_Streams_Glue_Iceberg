@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a356091a",
+	"first_name": "Rosene",
+	"last_name": "Gumley",
+	"email": "rgumley2v@gmail.com",
+	"gender": "Female",
+	"address": {
+		"city": "Port Washington",
+		"state": "New York",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "337941170984362",
+		"card_type": "americanexpress",
+		"currency_code": "USD",
+		"balance": "$8006.19"
+	},
+	"married_status": true,
+	"operationType": "update",
+	"wallTime": "2023-05-26 20:27:29.782000"
+}

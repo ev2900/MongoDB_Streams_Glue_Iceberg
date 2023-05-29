@@ -49,12 +49,10 @@ for change in change_stream:
         delete = str(delete).replace("'", '"')
 
         # Write to file
-        '''
         output_file = open("change_stream_output_" + str(counter) + ".json", "w")
         output_file.write(delete)
         output_file.close()
 
         print("file change_" + str(counter) + ".json created")
-        '''
 
     counter = counter + 1

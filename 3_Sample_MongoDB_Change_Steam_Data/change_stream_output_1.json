@@ -1,1 +1,1 @@
-{"_id": "646e9a7b80b1d315a3560973", "first_name": "Dave", "last_name": "Davidowsky", "email": "ddavidowsky5f@yahoo.com", "gender": "Female", "address": {"city": "Tacoma", "state": "Washington", "country": "United States", "country_code": "US"}, "card": {"card_number": "3543886409332319", "card_type": "jcb", "currency_code": "USD", "balance": "$5871.70"}, "married_status": true, "operationType": "update", "wallTime": "2023-05-26 20:19:59.268000"}
+{"operationType": "delete", "_id": "646e9a7b80b1d315a356094a", "wallTime": "2023-05-29 17:25:03.314000"}

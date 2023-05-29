@@ -1,0 +1,22 @@
+{
+	"_id": "646e9a7b80b1d315a3560920",
+	"first_name": "Lionel",
+	"last_name": "Dibbe",
+	"email": "ldibbe31@gmail.com",
+	"gender": "Female",
+	"address": {
+		"city": "Washington",
+		"state": "District of Columbia",
+		"country": "United States",
+		"country_code": "US"
+	},
+	"card": {
+		"card_number": "5602211272928734",
+		"card_type": "bankcard",
+		"currency_code": "USD",
+		"balance": "$9617.40"
+	},
+	"married_status": false,
+	"operationType": "update",
+	"wallTime": "2023-05-26 20:27:38.198000"
+}
