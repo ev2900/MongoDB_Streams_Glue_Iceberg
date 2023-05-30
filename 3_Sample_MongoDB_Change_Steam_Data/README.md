@@ -27,15 +27,17 @@ Each query should return 0 rows
 * Update 2 different documents once
 
 ```
-SELECT * FROM "iceberg"."user" WHERE _id = '';
-SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '6475485aa8579251f116aae0';
+SELECT * FROM "iceberg"."user" WHERE _id = '6475485aa8579251f116aae1';
 ```
-_id 
+_id 6475485aa8579251f116aae0
 
+*first_name*: Bob --> Robert <br>
+*email*: bploughwright18@163.com --> bploughwright18@gmail.com
 
-_id 
-
-
+_id 6475485aa8579251f116aae1
+*gender*: Male --> Female
+*card.card_type*: diners-club-enroute --> master_card
 
 #### Unit Test 4
 * Insert 2 new doucuments
