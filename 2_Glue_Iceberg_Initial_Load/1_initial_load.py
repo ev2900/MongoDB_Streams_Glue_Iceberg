@@ -24,7 +24,7 @@ s3_bucket_name = "<s3_bucket_name>"
 
 dynamic_frame_0 = glueContext.create_dynamic_frame_from_options(
     connection_type = "s3",
-    connection_options= {"paths": ["s3://" + s3_bucket_name "/initial_load/"]},
+    connection_options= {"paths": ["s3://" + s3_bucket_name + "/initial_load/"]},
     format = "json"
 )
 
