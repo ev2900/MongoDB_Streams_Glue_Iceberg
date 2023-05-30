@@ -1,36 +1,16 @@
-# MongoDB Change Stream
-
 ## Unit Test Sample Data
 
-#### Unit Test 0 
-Single record update [unit_test_0_data.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/3_Sample_MongoDB_Change_Steam_Data/unit_test_0.json)
-
 #### Unit Test 1
-Single record delete [unit_test_1_data.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/3_Sample_MongoDB_Change_Steam_Data/unit_test_1.json)
+Insert 3 new documents
 
 #### Unit Test 2
-Single record insert [unit_test_2_data.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/3_Sample_MongoDB_Change_Steam_Data/unit_test_2.json)
+Delete 3 different documents
 
 #### Unit Test 3
-Multi record updates with unique primary keys [unit_test_3_data.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/3_Sample_MongoDB_Change_Steam_Data/unit_test_3.json)
-
-#### Unit Test 4
-Multi record deletes with unique primary keys [unit_test_4_data.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/3_Sample_MongoDB_Change_Steam_Data/unit_test_4.json)
+Update 3 different documents once
 
 #### Unit Test 5
-Multi record inserts with unique primary keys [unit_test_5_data.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/3_Sample_MongoDB_Change_Steam_Data/unit_test_5.json)
-
-#### Unit Test 6
-Single record update, delete, insert with unique primary keys
-
-#### Unit Test 7
-Multi record update, delete, insert with unique primary keys
-
-#### Unit Test 8
-Multi record updates with unique primary and the same primary keys
-
-#### Unit Test 9
-Multi record deletes with unique and the same primary keys
-
-#### Unit Test 10 
-Multi record update, delete, insert with unique primary keys and the same priamry keys
+Insert 2 new doucuments
+Delete 2 different documents
+Update 2 different documents once
+Update 1 document 3 different times
