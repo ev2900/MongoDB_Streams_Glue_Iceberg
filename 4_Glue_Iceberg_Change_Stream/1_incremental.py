@@ -69,12 +69,24 @@ if len(update_insert.head(1)) > 0:
     update_insert = update_insert.select("operationType", "_id", col("wallTime_timestamp").alias("wallTime"), "first_name", "last_name", "email", "gender", "address", "card", "married_status")
 
     # Union the update_insert dataframe with the delete_w_full_document dataframe
-    change_stream_ready_to_merge = update_insert.union(delete_w_full_document)
+    change_stream_insert_update_delete = update_insert.union(delete_w_full_document)
 
 else:
-    change_stream_ready_to_merge = delete_w_full_document
+    change_stream_insert_update_delete = delete_w_full_document
     
+
+# Remove any duplicate records. Taking the latest if there are multiple updates for a single record
+change_stream_insert_update_delete.createOrReplaceTempView("tmp_change_stream_insert_update_delete")
+
+# Select only the latest wallTime grouped by _id
+no_duplicate_change_stream_insert_update_delete = spark.sql("""SELECT _id AS uniq_id, max(wallTime) AS uniq_wallTime FROM tmp_change_stream_insert_update_delete GROUP BY _id""")
+
+# Join back the dataframe with only the latest update by _id to get the columns other than _id and wallTime
+join_conditions = [((no_duplicate_change_stream_insert_update_delete.uniq_id == change_stream_insert_update_delete._id) & (no_duplicate_change_stream_insert_update_delete.uniq_wallTime == change_stream_insert_update_delete.wallTime))]
+no_duplicate_change_stream_insert_update_delete_full_record = no_duplicate_change_stream_insert_update_delete.join(change_stream_insert_update_delete, join_conditions, "left")
+
 # Iceberg merg into statement
+change_stream_ready_to_merge = no_duplicate_change_stream_insert_update_delete_full_record.select("operationType", "_id", "wallTime", "first_name", "last_name", "email", "gender", "address", "card", "married_status")
 change_stream_ready_to_merge.createOrReplaceTempView("updates")
 
 query = (""" 
