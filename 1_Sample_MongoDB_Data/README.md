@@ -10,4 +10,6 @@ We need to extract the entire MongoDB collection into a file. This file should s
 
 This extraction is a one time process. Ultimately we will use the MongoDB change stream and another Glue job to keep this extract in sync with the actual collection.
 
-The [1_get_all_documents_from_mongoDB_collection.py](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/1_Sample_MongoDB_Data/1_get_all_documents_from_mongoDB_collection.py) will connect to a specified collection and extract all of the data into a JSON file. 
+The [1_get_all_documents_from_mongoDB_collection.py](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/1_Sample_MongoDB_Data/1_get_all_documents_from_mongoDB_collection.py) will connect to a specified collection and extract all of the data into a JSON file. Make sure to read the comments in the python script. You will need to update some configurations.
+
+If you are using the sample data ( ie. [0_mongoDB_input.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/1_Sample_MongoDB_Data/0_mongoDB_input.json) ) the output of the [1_get_all_documents_from_mongoDB_collection.py](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/1_Sample_MongoDB_Data/1_get_all_documents_from_mongoDB_collection.py) is already provided as [2_mongoDB_dump.json](https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/1_Sample_MongoDB_Data/2_mongoDB_dump.json) 
