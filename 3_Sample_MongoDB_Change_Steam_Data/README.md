@@ -5,9 +5,9 @@
 
 Athena query 
 ```
-SELECT * FROM "iceberg"."user" WHERE _id = '64753f81a1309e5efb435f7a';
-SELECT * FROM "iceberg"."user" WHERE _id = '64753f90a1309e5efb435f7c';
-SELECT * FROM "iceberg"."user" WHERE _id = '64753f9da1309e5efb435f7e';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
 ```
 
 Each query should return 1 row
@@ -17,14 +17,25 @@ Each query should return 1 row
 
 Athena query
 ```
-SELECT * FROM "iceberg"."user" WHERE _id = '64753f38a1309e5efb435ecb';
-SELECT * FROM "iceberg"."user" WHERE _id = '64753f38a1309e5efb435ecc';
-SELECT * FROM "iceberg"."user" WHERE _id = '64753f38a1309e5efb435ecd';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
 ```
 Each query should return 0 rows
 
 #### Unit Test Data 3
-* Update 3 different documents once
+* Update 2 different documents once
+
+```
+SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '';
+```
+_id 
+
+
+_id 
+
+
 
 #### Unit Test 4
 * Insert 2 new doucuments
