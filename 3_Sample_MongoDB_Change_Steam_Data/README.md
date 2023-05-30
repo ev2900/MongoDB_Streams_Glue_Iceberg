@@ -5,9 +5,9 @@
 
 Athena query 
 ```
-SELECT * FROM "iceberg"."user" WHERE _id = '';
-SELECT * FROM "iceberg"."user" WHERE _id = '';
-SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '647548a6a8579251f116ab6a';
+SELECT * FROM "iceberg"."user" WHERE _id = '647548cea8579251f116ab6c';
+SELECT * FROM "iceberg"."user" WHERE _id = '64754920a8579251f116ab6e';
 ```
 
 Each query should return 1 row
@@ -17,9 +17,9 @@ Each query should return 1 row
 
 Athena query
 ```
-SELECT * FROM "iceberg"."user" WHERE _id = '';
-SELECT * FROM "iceberg"."user" WHERE _id = '';
-SELECT * FROM "iceberg"."user" WHERE _id = '';
+SELECT * FROM "iceberg"."user" WHERE _id = '6475485aa8579251f116aab4';
+SELECT * FROM "iceberg"."user" WHERE _id = '6475485aa8579251f116aab5';
+SELECT * FROM "iceberg"."user" WHERE _id = '6475485aa8579251f116aab6';
 ```
 Each query should return 0 rows
 
