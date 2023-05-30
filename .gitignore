@@ -3,3 +3,4 @@
 1_Sample_MongoDB_Data/0_mongoDB_connection_string.txt
 3_Sample_MongoDB_Change_Steam_Data/change_stream_wo_full_document/*
 3_Sample_MongoDB_Change_Steam_Data/change_stream_wo_full_document/pretty_json/*
+.$mongoDB_glue_iceberg_architecture.drawio.bkp
