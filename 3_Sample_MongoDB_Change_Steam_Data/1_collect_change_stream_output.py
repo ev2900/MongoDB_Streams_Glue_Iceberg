@@ -21,21 +21,26 @@ for change in change_stream:
         # Look up full record + add the operationType field
         update_insert = client.sampleDB.user.find_one({"_id": ObjectId(change['documentKey']['_id'])})
         
-        update_insert["operationType"] = change["operationType"]
-        # update_insert["clusterTime"] = str(change["clusterTime"])    
-        update_insert["wallTime"] = str(change["wallTime"])
+        if update_insert != None:
 
-        # Clean up json
-        update_insert["_id"] = str(change['documentKey']['_id'])
+            update_insert["operationType"] = change["operationType"]
+            # update_insert["clusterTime"] = str(change["clusterTime"])    
+            update_insert["wallTime"] = str(change["wallTime"])
 
-        update_insert = str(update_insert).replace("'", '"').replace("True", "true").replace("False","false")
+            # Clean up json
+            update_insert["_id"] = str(change['documentKey']['_id'])
 
-        # Write to file
-        output_file = open("change_stream_output_" + str(counter) + ".json", "w")
-        output_file.write(update_insert)
-        output_file.close()
+            update_insert = str(update_insert).replace("'", '"').replace("True", "true").replace("False","false")
 
-        print("file change_" + str(counter) + ".json created")
+            # Write to file
+            output_file = open("change_stream_output_" + str(counter) + ".json", "w")
+            output_file.write(update_insert)
+            output_file.close()
+
+            print("file change_" + str(counter) + ".json created")
+
+        else:
+            print("Object _id " + change['documentKey']['_id'] + "not found")
 
     elif change['operationType'] == "delete":
 
