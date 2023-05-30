@@ -4,4 +4,6 @@ This repository has a solution for a 1 time copy of data from a MongoDB collecti
 
 The architecture below depicts the solution 
 
+<br>
+
 <img width="1000" alt="map-user" src="https://github.com/ev2900/MongoDB_Streams_Glue_Iceberg/blob/main/0_Architecture/mongoDB_glue_iceberg_architecture.png">
