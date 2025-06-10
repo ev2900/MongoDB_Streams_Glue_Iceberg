@@ -1,6 +1,6 @@
 # MongoDB Streams AWS Glue
 
-<img width="85" alt="map-user" src="https://img.shields.io/badge/views-1647-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-240-green">
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-1647-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-242-green">
 
 This repository has a solution for a 1 time copy of data from a MongoDB collection into an Apache Iceberg table in S3 and a solution to use the MongoDB change stream to keep the iceberg copy of the data up to date.
 
